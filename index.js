@@ -6,7 +6,7 @@ import showBlock from './modules/navbar.js';
 const time = document.getElementById('date');
 setInterval(() => {
   time.innerHTML = DateTime.now().toLocaleString(
-    DateTime.DATETIME_MED_WITH_SECONDS,
+    DateTime.DATETIME_MED_WITH_SECONDS
   );
 }, 1000);
 
