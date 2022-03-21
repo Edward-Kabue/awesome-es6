@@ -82,10 +82,6 @@ table tr:nth-child(even) {
   text-align: left;
 }
 
-#add_book {
-  display: none;
-}
-
 .contact-us {
   visibility: hidden;
   display: flex;
