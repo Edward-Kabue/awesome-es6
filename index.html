@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
     <link rel="stylesheet" href="style.css">
@@ -34,23 +35,25 @@
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody id="form-list"></tbody>
+                <tbody class="books"></tbody>
             </table>
         </section>
-        <section id="add_book">
+        <section id="add_book" class="add-book">
             <form id="book-form">
+                <h2>Add a book</h2>
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" id="title" class="form-control">
+                    <input type="text" id="title" class="form-control title">
                 </div>
                 <div class="form-group">
                     <label for="author">Author</label>
-                    <input type="text" id="author" class="form-control">
+                    <input type="text" id="author" class="form-control author">
                 </div>
 
-                <button type="submit" id="button">Add Book</button>
+                <button type="submit" id="button" class="add-btn">Add Book</button>
 
             </form>
+            <div id="error"></div>
         </section>
         <section id="contact" class="contact-us ">
             <h2>Contact Information</h2>
@@ -61,7 +64,7 @@
             <ul>
                 <li>Our E-mail: books@awesome.com</li>
                 <li>Our Phone Number: 003311223344</li>
-                <li>Our Adress: John Doe street, 22, 883322 Vikings, Valhala</li>
+                <li>Our Adress:Limpopo madagascar </li>
             </ul>
         </section>
     </main>
