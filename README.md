@@ -4,6 +4,7 @@
 
 Developed a  that displays a list of books. The user can add books by providing a book title and an author. The user can also delete a certain book from the list by clicking the delete button.
 
+## View the website on this  [link](https://awesome-es6.vercel.app/)
 
 ## Built With
 
@@ -14,22 +15,27 @@ Developed a  that displays a list of books. The user can add books by providing 
 
  
 ## To get a local copy up and running follow these simple example steps.
-1. Under the repository name, click the Clone or download green button.
+1. Under the repository name, click green dropdown written code.
 2. Copy the URL given by clicking the clipboard button
-3. Open a terminal window in your local machine and change the current directory to the one you want the clone directory to be made.
-4. Type git clone and the paste the URL you previusly copied to the clipboard
-5. Change the current directory to the newly created folder
+3. Clone it to your local machine <pre> ```
+git clone https://github.com/Edward-Kabue/awesome-es6.git ```</pre>
+5. Change the directory <pre> ```cd awesome-es6.```</pre>
+6. Install packages <pre> $ npm install </pre>
+7. Right click on the ```index.html``` file and open with liveserver.
 
 
-## Authors
+## Author
 
 ### Edward kabue
+
 
 - GitHub: [@Edward-Kabue](https://github.com/Edward-Kabue)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+=======
 ## Show your support
+
 
 Give a ⭐️ if you like this project!
 
