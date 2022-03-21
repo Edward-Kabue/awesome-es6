@@ -3,8 +3,6 @@ import Books from './modules/book.js';
 import showBlock from './modules/navbar.js';
 import { displayBook, removeBk } from './modules/showBook.js';
 
-// display date and time
-
 const time = document.getElementById('date');
 setInterval(() => {
   time.innerHTML = DateTime.now().toLocaleString(
@@ -12,16 +10,12 @@ setInterval(() => {
   );
 }, 1000);
 
-//  display all the books;
-
 if (localStorage.getItem('books') !== null) {
   const books = JSON.parse(localStorage.getItem('books'));
   books.forEach((element) => {
     displayBook(element);
   });
 }
-
-// add book
 
 const title = document.getElementById('title');
 const author = document.getElementById('author');
@@ -38,14 +32,10 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   }
 });
 
-// Remove the book
-
 const btn = document.querySelectorAll('.btn');
 btn.forEach((element) => {
   element.addEventListener('click', removeBk);
 });
-
-// navbar section
 
 const links = document.querySelectorAll('.links');
 links.forEach((element) => {
