@@ -5,9 +5,9 @@ import { displayBook, removeBk } from './modules/showBook.js';
 
 // display date and time
 
-const dateBox = document.getElementById('date');
+const time = document.getElementById('date');
 setInterval(() => {
-  dateBox.innerHTML = DateTime.now().toLocaleString(
+  time.innerHTML = DateTime.now().toLocaleString(
     DateTime.DATETIME_MED_WITH_SECONDS
   );
 }, 1000);
