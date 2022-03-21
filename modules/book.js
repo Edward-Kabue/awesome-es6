@@ -2,9 +2,10 @@ export default class Books {
   constructor(title = '', author = '') {
     this.title = title;
     this.author = author;
-    this.books = localStorage.getItem('books') !== null
-      ? JSON.parse(localStorage.getItem('books'))
-      : '';
+    this.books =
+      localStorage.getItem('books') !== null
+        ? JSON.parse(localStorage.getItem('books'))
+        : '';
   }
 
   saveBook(BTSave = this.books) {
