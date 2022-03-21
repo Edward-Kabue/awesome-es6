@@ -44,6 +44,10 @@ ul li a {
   font-family: Pacifico, sans-serif;
 }
 
+#add-book {
+  display: none;
+}
+
 .books_container {
   margin-top: 30px;
   display: none;
