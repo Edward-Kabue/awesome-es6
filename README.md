@@ -22,11 +22,18 @@ git clone https://github.com/Edward-Kabue/awesome-es6.git ```</pre>
 6. Install packages <pre> $ npm install </pre>
 7. Right click on the ```index.html``` file and open with liveserver.
 
+
 ## Author
+
+### Edward kabue
+
 
 - GitHub: [@Edward-Kabue](https://github.com/Edward-Kabue)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+=======
+## Show your support
 
 
 Give a ⭐️ if you like this project!
