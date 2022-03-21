@@ -23,16 +23,12 @@ Developed a  that displays a list of books. The user can add books by providing 
 
 ## Authors
 
-### Author 1
+### Edward kabue
 
 - GitHub: [@Edward-Kabue](https://github.com/Edward-Kabue)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-### Author 2
-- Github: [LionRouge](https://github.com/LionRouge1)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 ## Show your support
 
 Give a ⭐️ if you like this project!
