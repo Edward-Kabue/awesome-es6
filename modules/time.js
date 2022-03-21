@@ -1,8 +1,8 @@
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+import { DateTime } from 'luxon/src/luxon.js';
 
 const time = document.getElementById('date');
 setInterval(() => {
   time.innerHTML = DateTime.now().toLocaleString(
-    DateTime.DATETIME_MED_WITH_SECONDS,
+    DateTime.DATETIME_MED_WITH_SECONDS
   );
 }, 1000);
