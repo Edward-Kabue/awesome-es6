@@ -1,8 +1,8 @@
-import Books from "./book.js";
+import Books from './book.js';
 
 export const displayBook = (book) => {
-  const list = document.querySelector("#form-list");
-  const row = document.createElement("tr");
+  const list = document.querySelector('#form-list');
+  const row = document.createElement('tr');
   row.innerHTML = ` <td>${book.Btitle}</td> 
     <td>${book.Bauthor}</td> <td>
     <button type="submit" id="${book.Id}" class="btn">Remove</button></td> `;

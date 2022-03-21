@@ -1,11 +1,11 @@
-import { DateTime } from "./node_modules/luxon/src/luxon.js";
-import Books from "./modules/book.js";
-import showBlock from "./modules/navbar.js";
-import { displayBook, removeBk } from "./modules/showBook.js";
+import { DateTime } from './node_modules/luxon/src/luxon.js';
+import Books from './modules/book.js';
+import showBlock from './modules/navbar.js';
+import { displayBook, removeBk } from './modules/showBook.js';
 
 // display date and time
 
-const dateBox = document.getElementById("date");
+const dateBox = document.getElementById('date');
 setInterval(() => {
   dateBox.innerHTML = DateTime.now().toLocaleString(
     DateTime.DATETIME_MED_WITH_SECONDS
@@ -14,8 +14,8 @@ setInterval(() => {
 
 //  display all the books;
 
-if (localStorage.getItem("books") !== null) {
-  const books = JSON.parse(localStorage.getItem("books"));
+if (localStorage.getItem('books') !== null) {
+  const books = JSON.parse(localStorage.getItem('books'));
   books.forEach((element) => {
     displayBook(element);
   });
@@ -23,14 +23,14 @@ if (localStorage.getItem("books") !== null) {
 
 // add book
 
-const title = document.getElementById("title");
-const author = document.getElementById("author");
+const title = document.getElementById('title');
+const author = document.getElementById('author');
 
-document.querySelector("#book-form").addEventListener("submit", (e) => {
-  if (title.value === "" || author.value === "") {
-    const error = document.getElementById("error");
-    error.textContent = "Title and Author fields must be filled out";
-    error.style.color = "red";
+document.querySelector('#book-form').addEventListener('submit', (e) => {
+  if (title.value === '' || author.value === '') {
+    const error = document.getElementById('error');
+    error.textContent = 'Title and Author fields must be filled out';
+    error.style.color = 'red';
     e.preventDefault();
   } else {
     const addBk = new Books(title.value, author.value);
@@ -40,19 +40,19 @@ document.querySelector("#book-form").addEventListener("submit", (e) => {
 
 // Remove the book
 
-const btn = document.querySelectorAll(".btn");
+const btn = document.querySelectorAll('.btn');
 btn.forEach((element) => {
-  element.addEventListener("click", removeBk);
+  element.addEventListener('click', removeBk);
 });
 
 // navbar section
 
-const links = document.querySelectorAll(".links");
+const links = document.querySelectorAll('.links');
 links.forEach((element) => {
-  element.addEventListener("click", function () {
+  element.addEventListener('click', function () {
     showBlock(element.id);
-    const [current] = document.getElementsByClassName("active");
-    current.className = current.className.replace(" active", "");
-    this.className += " active";
+    const [current] = document.getElementsByClassName('active');
+    current.className = current.className.replace(' active', '');
+    this.className += ' active';
   });
 });

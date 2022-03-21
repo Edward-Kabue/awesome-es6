@@ -1,20 +1,20 @@
 export default class Books {
-  constructor(title = "", author = "") {
+  constructor(title = '', author = '') {
     this.title = title;
     this.author = author;
     this.books =
-      localStorage.getItem("books") !== null
-        ? JSON.parse(localStorage.getItem("books"))
-        : "";
+      localStorage.getItem('books') !== null
+        ? JSON.parse(localStorage.getItem('books'))
+        : '';
   }
 
   saveBook(BTSave = this.books) {
     const storeBook = JSON.stringify(BTSave);
-    localStorage.setItem("books", storeBook);
+    localStorage.setItem('books', storeBook);
   }
 
   addBook() {
-    if (this.books === "" || this.books.length <= 0) {
+    if (this.books === '' || this.books.length <= 0) {
       this.books = [
         {
           Id: 1,
