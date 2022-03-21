@@ -18,7 +18,7 @@ Developed a  that displays a list of books. The user can add books by providing 
 2. Copy the URL given by clicking the clipboard button
 3. Clone it to your local machine <pre> ```
 git clone https://github.com/Edward-Kabue/awesome-es6.git ```</pre>
-5. Change the director <pre> ```cd awesome-es6.```</pre>
+5. Change the directory <pre> ```cd awesome-es6.```</pre>
 6. Install packages <pre> $ npm install </pre>
 7. Right click on the ```index.html``` file and open with liveserver.
 
